@@ -38,3 +38,28 @@ public class SleepingWorker implements Runnable {
         }
     }
 }
+
+import java.util.Random;
+
+public class SleepingWorker implements Runnable {
+
+    private Random random = new Random();
+
+    @SuppressWarnings("InfiniteLoopStatement")
+    @Override
+    public void run() {
+        Long l = 0L;
+        while (true) {
+            l++;
+            try {
+                Thread.sleep(random.nextInt(20));
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            if (l == Long.MAX_VALUE) {
+                l = 0L;
+            }
+        }
+    }
+}
+
