@@ -27,6 +27,6 @@ Copyright (C) 2015 M. Isuru Tharanga Chrishantha Perera
 
 Licensed under the Apache License, Version 2.0
 
-This line is added by Ankit Raji
+This line is added by Ankit Raj
 
 New line added for testing 
